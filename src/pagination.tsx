@@ -88,6 +88,7 @@ function Slider({ numberOfScreens, style }: iSlider) {
   return (
     <Animated.View onLayout={handleLayout}>
       <Animated.View
+        // @ts-ignore
         style={{
           width: sliderWidth,
           transform: [{ translateX: translation }],
@@ -117,8 +118,6 @@ function Progress({ numberOfScreens, style }: iSlider) {
       <Animated.View
         style={{
           width: sliderWidth,
-          height: 2,
-          backgroundColor: 'rebeccapurple',
           ...DEFAULT_SLIDER_STYLE,
           ...style,
         }}

@@ -463,6 +463,7 @@ function Pager({
           <Animated.View style={style || { flex: 1 }}>
             <Animated.View style={{ flex: 1 }} onLayout={handleLayout}>
               <Animated.View
+                // @ts-ignore
                 style={{
                   flex: 1,
                   [targetDimension]: totalDimension,
